@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #070722;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+h1::before {
+  content: '📧';
+  display: block;
+}
+
+h2::before {
+  content: '🐅';
+  display: block;
+}
+
+.contador {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 800;
+}

@@ -175,41 +175,60 @@
     <section class="oracamento">
       <div class="container card_orçamento">
         <div class="row">
-          <div class="col-md-6 cont">
-            <h1>Lorem ipsum</h1>
+          <div class="col-md-12">
+            <h1>Sobre a gente</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ratione odio, tempora voluptas molestiae libero tempore soluta aliquam enim neque iure vitae, voluptates natus culpa, quibusdam vero doloribus? Praesentium, tempora!</p>
-            <h2>Ficamos aqui:</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15601.579661323662!2d-45.00226516998385!3d-12.153494679910859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x75f8b7d015fad81%3A0xf13516eda54aeca9!2sContabilidade%20Sant&#39;Ana!5e0!3m2!1spt-BR!2sbr!4v1644936663895!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
-            <h3>Matriz</h3>
+            <h2>Contato:</h2>
+            <ul class="navbar-nav">
+              <li><a href="">Contador: José Leonam C. Sant´Ana <br>
+                CRC: 035043-O/0 BA</a></li>
+              <li><a href="">Email: leonam@constsantana.com.br</a></li>
+              <li><a href="">Celular: (77) 98826-9964 
+              </a></li>
+              <li><a href="">Telefone: (77) 3611-7762</a></li>
+            </ul>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 cont">
+            
+            <h2>Matriz</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15601.579661323662!2d-45.00226516998385!3d-12.153494679910859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x75f8b7d015fad81%3A0xf13516eda54aeca9!2sContabilidade%20Sant&#39;Ana!5e0!3m2!1spt-BR!2sbr!4v1644936663895!5m2!1spt-BR!2sbr" width="400" height="300"height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+            <p> Rua Campos Salles, nº 507 A<br>Renato Gonçalves<br>Barreiras – BA</p>
+          </div>
+          <div class="col-md-6 cont">
+            <h2>Filial</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15601.579661323662!2d-45.00226516998385!3d-12.153494679910859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x75f8b7d015fad81%3A0xf13516eda54aeca9!2sContabilidade%20Sant&#39;Ana!5e0!3m2!1spt-BR!2sbr!4v1644936663895!5m2!1spt-BR!2sbr" width="400" height="300"height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+            <p>Rua José Carlos de Lima, nº395<br> Mimoso do Oeste<br>Luís Eduardo Magalhães - BA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="formulario_contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
             <div class="formulario">
-              <div class="form ml-auto mr-auto">
-                <div class="title">Contato</div>
-                <div class="subtitle">Entraremos em contato com você!</div>
-                <div class="input-container ic1">
-                  <input id="firstname" class="input" type="text" placeholder=" " />
-                  <div class="cut"></div>
-                  <label for="firstname" class="placeholder">Nome</label>
-                </div>
-                <div class="input-container ic2">
-                  <input id="lastname" class="input" type="text" placeholder=" " />
-                  <div class="cut"></div>
-                  <label for="lastname" class="placeholder">Telefone</label>
-                </div>
-                <div class="input-container ic2">
-                  <input id="email" class="input" type="text" placeholder=" " />
-                  <div class="cut cut-short"></div>
-                  <label for="email" class="placeholder">Email</>
-                </div>
-                <div class="input-container ic2">
-                  <input id="text" class="input text" type="text" placeholder=" " />
-                  <div class="cut"></div>
-                  <label for="text" class="placeholder">Mensagem</label>
-                  
-                </div>
-                <button type="text" class="submit">Enviar</button>
-              </div>
+              <h1>Formulário de Contato</h1>
+              <form
+              action="https://formsubmit.co/matheus11hora@gmail.com"
+              method="POST"
+              class="form"
+              >
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" required />
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" required />
+              <label for="phone">Telefone</label>
+              <input type="phone" name="phone" id="phone" required />
+              <label for="message">Mensagem</label>
+              <textarea name="message" id="message" required></textarea>
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5500/obrigado.html"
+              />
+              <button type="submit">Enviar</button>
+              </form>
             </div>
           </div>
         </div>

@@ -32,8 +32,9 @@ h1 {
   padding: 30px;
 }
 h2 {
+  margin: 20px;
   font-size: 30px;
-  font-weight: 00;
+  font-weight: 700;
   letter-spacing: -0.05em;
   color: #090929;
 }
@@ -911,11 +912,12 @@ li.item-icon a {
 /* form */
 
 .form {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 40px;
   margin-bottom: 10px;
   background-color: #070722;
   box-sizing: border-box;
-  height: 540px;
   padding: 20px;
   width: 320px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
@@ -1041,8 +1043,8 @@ li.item-icon a {
 }
 .oracamento {
   background: white;
-  height: 100vh;
   text-align: center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -1050,19 +1052,111 @@ li.item-icon a {
   color: #070722;
 }
 
-.card_orçamento {
-  height: 700px;
-  background: white;
-  border-radius: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
-}
-
 .cont {
   margin-top: auto;
 }
-.cont a {
+.card_orçamento a {
   color: #65657b;
+}
+
+iframe {
+  width: 400;
+}
+
+label {
+  font-weight: 800;
+  color: white;
+}
+
+.form-control {
+  border-radius: 15px;
+  border: none;
+}
+
+input:active {
+  background: #303245;
+}
+
+.formulario_contato {
+  background: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 32rem;
+  font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: #09d;
+  box-shadow: 0 0 0 3px #4dc8ff;
+}
+
+.form button {
+  display: block;
+  padding: 1rem;
+  background: white;
+  color: #070722;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 800;
+}
+
+.form button:hover,
+.form button:focus {
+  outline: none;
+  color: white;
+  background: #09d;
+}
+
+textarea {
+  height: 20px;
+}
+
+.formulario {
+  margin-bottom: 120px;
+}
+
+.formulario h1 {
+  color: #070722;
 }
