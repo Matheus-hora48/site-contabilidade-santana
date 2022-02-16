@@ -295,9 +295,13 @@ nav.navbartrasp2 {
   backdrop-filter: blur(5px);
 }
 
-@media (max-width: 575px) {
-  .caixa {
-    transition: none;
+@media (min-width: 575px) {
+  .marcador {
+    padding: 20px;
+    text-align: center;
+    transform: (translateY(100px));
+    opacity: 0;
+    transition: 0.5s;
   }
 }
 
@@ -305,9 +309,9 @@ nav.navbartrasp2 {
   padding: 20px;
   text-align: center;
   transform: (translateY(100px));
-  opacity: 0;
   transition: 0.5s;
 }
+
 .marcador2 {
   padding: 20px;
   text-align: center;
@@ -1159,4 +1163,14 @@ textarea {
 
 .formulario h1 {
   color: #070722;
+}
+
+@media (min-width: 575px) {
+  #menu-sumir {
+    display: none;
+  }
+}
+
+.collapse ul {
+  margin-right: 15px;
 }

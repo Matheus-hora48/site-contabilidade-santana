@@ -12,3 +12,7 @@ var contador = setInterval(function () {
     ).innerHTML = `Enviando formulário: ${tempo} `
   }
 }, 1000)
+
+function next(){
+  window.location.href = 'obrigado.html'
+}
