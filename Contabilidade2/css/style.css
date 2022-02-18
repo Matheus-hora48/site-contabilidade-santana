@@ -13,7 +13,7 @@ html,
 
 body {
   background: linear-gradient(rgba(21, 20, 102, 0.4), rgba(7, 7, 34, 0.4)),
-    url(../img/back.jpg) no-repeat;
+    url(../img/funcionarios.jpg) no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
@@ -520,6 +520,10 @@ body {
 .img-transition:hover {
   opacity: 1;
 }
+.grande {
+  height: 170px;
+  width: 260px;
+}
 .about-txt {
   padding-top: 60px;
 }
@@ -534,8 +538,6 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  opacity: 0.8;
-  transition: opacity 0.5s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   margin-bottom: 60px;
   margin-left: 10px;

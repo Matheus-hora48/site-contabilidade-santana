@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #221307;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: sans-serif;
+      }
+      h1,
+      h2 {
+        font-size: 3rem;
+        color: #fff;
+        margin-bottom: 2rem;
+        text-align: center;
+        line-height: 1.2;
+        font-weight: 800;
+      }
+      canvas {
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-transform: uppercase">Valeu luisaaaao</h1>
+    <canvas width="600" height="400"></canvas>
+
+    <script>
+      var tela = document.querySelector('canvas')
+      var pincel = tela.getContext('2d')
+
+      pincel.fillStyle = 'white'
+      pincel.fillRect(0, 0, 600, 400)
+
+      function exibeAlerta(evento) {
+        var x = evento.pageX - tela.offsetLeft
+        var y = evento.pageY - tela.offsetTop
+
+        pincel.fillStyle = 'blue'
+        pincel.beginPath()
+        pincel.arc(x, y, 10, 0, 2 * 3.14)
+        pincel.fill()
+
+        console.log(x + ',' + y)
+      }
+
+      tela.onclick = exibeAlerta
+    </script>
+  </body>
+</html>
