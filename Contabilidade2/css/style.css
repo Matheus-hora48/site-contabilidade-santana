@@ -7,7 +7,7 @@ btn* {
 body,
 html,
 #home {
-  height: 100%;
+  height: 80%;
   overflow-x: hidden;
 }
 
@@ -145,7 +145,7 @@ nav.navbartrasp2 {
   border: 3px solid white;
   position: absolute;
   left: 45%;
-  bottom: 130px;
+  bottom: -20px;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -706,6 +706,9 @@ i .instagram {
 }
 
 @media (max-width: 575px) {
+  #home {
+    height: 90%;
+  }
   body {
     background-image: linear-gradient(180deg, #070722, #090929, #0c0b34);
   }
@@ -714,6 +717,7 @@ i .instagram {
   }
   .scroll-down {
     left: 37%;
+    bottom: 20px;
   }
   .navbartrasp2 {
     display: none;
