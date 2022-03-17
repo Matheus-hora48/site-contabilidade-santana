@@ -8,7 +8,7 @@ function tamanhoTela() {
   console.log(largura)
 }
 
-if(largura < 574){
+if(largura > 574){
   VanillaTilt.init(document.querySelectorAll('.caixa'), {
     max: 25,
     speed: 400,
