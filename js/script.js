@@ -1,9 +1,22 @@
-VanillaTilt.init(document.querySelectorAll('.caixa'), {
-  max: 25,
-  speed: 400,
-  glare: true,
-  'max-glare': 1
-})
+let altura = 0
+let largura = 0
+
+function tamanhoTela() {
+  altura = window.innerHeight
+  largura = window.innerWidth
+
+  console.log(largura)
+}
+
+if(largura < 574){
+  VanillaTilt.init(document.querySelectorAll('.caixa'), {
+    max: 25,
+    speed: 400,
+    glare: true,
+    'max-glare': 1
+  })
+}
+
 
 var swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
