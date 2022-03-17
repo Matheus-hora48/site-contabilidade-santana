@@ -1,14 +1,8 @@
-let altura = 0
-let largura = 0
+var largura = 0
+largura = window.innerWidth
 
-function tamanhoTela() {
-  altura = window.innerHeight
-  largura = window.innerWidth
 
-  console.log(largura)
-}
-
-if(largura > 574){
+if (largura > 574) {
   VanillaTilt.init(document.querySelectorAll('.caixa'), {
     max: 25,
     speed: 400,
@@ -16,7 +10,6 @@ if(largura > 574){
     'max-glare': 1
   })
 }
-
 
 var swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
@@ -34,5 +27,3 @@ var swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination'
   }
 })
-
-
