@@ -1,4 +1,7 @@
+
 <?php require('Link.class.php');
+
+
 
 define('REQ', "_main" . DIRECTORY_SEPARATOR);
 
