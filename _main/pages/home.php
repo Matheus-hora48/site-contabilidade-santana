@@ -115,13 +115,13 @@
               <a href="#principios" class="nav-link">Nosso Princípios</a>
             </li>
             <li class="nav-item">
-              <a href="contato.html" class="nav-link">Orçamentos</a>
+              <a href="contato" class="nav-link">Orçamentos</a>
             </li>
             <li class="nav-item" id="contato_unico">
-              <a href="contato.html" class="nav-link">Contato</a>
+              <a href="contato" class="nav-link">Contato</a>
             </li>
             <li class="nav-item" id="menu-sumir">
-              <a href="contato.html" class="btn btn-light ml-4 ml-4 ">Contato</a>
+              <a href="contato" class="btn btn-light ml-4 ml-4 ">Contato</a>
             </li>
           </ul>
     </header>
