@@ -7,7 +7,7 @@ define('REQ', "_main" . DIRECTORY_SEPARATOR);
 
 $link = new Link();
 
-var_dump($link);
+
 
 
 
